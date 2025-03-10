@@ -7,6 +7,7 @@ import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 import dts from 'vite-plugin-dts'
 import { libInjectCss } from 'vite-plugin-lib-inject-css'
+import tailwindcss from '@tailwindcss/vite'
 
 // https://vite.dev/config/
 export default defineConfig({
@@ -18,6 +19,7 @@ export default defineConfig({
       exclude: ['**/*.stories.tsx', 'src/test', '**/*.test.tsx'], // 타입 선언 빌드 과정에서 제외
       tsconfigPath: 'tsconfig.app.json',
     }),
+    tailwindcss(),
   ],
   build: {
     lib: {
