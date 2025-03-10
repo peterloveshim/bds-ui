@@ -1,7 +1,7 @@
 {
   "name": "bds-ui",
   "private": false,
-  "version": "0.0.0",
+  "version": "0.0.1",
   "type": "module",
   "files": [
     "dist"
@@ -9,6 +9,26 @@
   "exports": "./dist/main.js",
   "module": "./dist/main.js",
   "types": "./dist/main.d.ts",
+  "description": "basic design system",
+  "keywords": [
+    "react",
+    "storybook",
+    "design system"
+  ],
+  "homepage": "https://github.com/peterloveshim/bds-ui",
+  "bugs": {
+    "email": "peterloveshim@gmail.com"
+  },
+  "author": {
+    "name": "Hyeongsu JANG",
+    "email": "peterloveshim@gmail.com",
+    "url": "http://peterloveshim.com"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/peterloveshim/bds-ui.git"
+  },
   "scripts": {
     "build": "tsc -b && vite build",
     "lint": "eslint . --ext ts,tsx",
